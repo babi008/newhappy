@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Carta de Ano Novo</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #1d2671, #c33764); /* FUNDO ANTIGO */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* BORDA DEGRADÊ */
+.card-wrapper {
+  padding: 5px;
+  border-radius: 28px;
+  background: linear-gradient(135deg, #fbc2eb, #c33764, #1d2671);
+}
+
+/* CARD */
+.card {
+  background: #ffffff;
+  width: 90%;
+  max-width: 820px;
+  padding: 60px 50px;
+  border-radius: 25px;
+  text-align: center;
+  animation: subir 1s ease;
+}
+
+/* ÍCONE */
+.icon {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+/* TÍTULO */
+h1 {
+  font-size: 2rem;
+  color: #c33764;
+  margin-bottom: 25px;
+}
+
+/* TEXTO */
+.mensagem {
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.8;
+  display: none;
+  animation: fade 0.8s ease;
+}
+
+/* TEXTO FINAL */
+.final {
+  margin-top: 35px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #f5e026;
+  display: none;
+  animation: fade 1s ease;
+}
+
+/* BOTÃO */
+button {
+  margin-top: 20px;
+  background: linear-gradient(135deg, #c33764, #1d2671);
+  color: #fff;
+  border: none;
+  padding: 14px 36px;
+  border-radius: 40px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}
+
+/* ANIMAÇÕES */
+@keyframes subir {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="card-wrapper">
+  <div class="card">
+
+    <h1 id="titulo">Para May🌷🤍</h1>
+
+    <div class="mensagem" id="mensagem">
+      Acho que depois de me aturar durante um ano todo, ser paciente,
+      ser meu consolo, ser meu ombro amigo, ser quem eu precisava
+      nas horas mais difíceis, ser você,  merece uma carta digna de 
+      agradecimento kkk.
+      Não sei nem por onde começar pq foram tantas as vezes que me vi grata por te ter como amg/irmã,
+      sabendo que sua amizade é um propósito  de Deus na minha vida,
+      serei eternamente grata a Ele por isso. Esse não foi um dos anos mais 
+      legais, acho que para ambas, mas conseguimos chegar ao fim dele, como? só Deus sabe,
+      mas uma coisa eu sei, com certeza tenho a melhor pessoa do mundo como melhor amiga
+      e que sem você a vida seria difícil ², quero que saiba que tenho orgulho de vc,
+      por tudo que passou, enfrentou, bateu de frente e até mesmo recuou esse ano,
+      foram dias que talvez pensassem que não daria conta, infinitos choros e sensação 
+      de que nada ia dar certo, mas as assim como dias ruins acontecem dias bons tbm surgem,
+      e as coisas daram certo no tempo certo, tende bom animo.
+      Quero te agradecer por tanto, por tudo e por muito, conheceu o meu lado mais frágil, mais chato,
+      mais carinhoso, mais sem paciência, mais fraco e mais doente ksksks, posso dizer 
+      com firmeza que és a pessoa que mais me conhece e entende, obrigado por isso, obrigado por me defender 
+      quando não to perto e por "brigar" em meu favor, só amigos não fazem isso
+      mas irmãos sim. Te desejo que as partes ruins de 2025 fiquem em 2025 e que 2026 te traga a paz que tanto merece, coisas 
+      boas e leveza pro coração mais puro que conheço, além disso desejo que 
+      este novo ano seja cheio de paz, amor e esperança.
+      Que encontre coragem e cada dia tenha motivos para sorrir.
+      Você é especial e merece o mundo. Amo você ✨
+    </div>
+
+    <div class="final" id="final">
+      ✨ Feliz 2026 ✨
+    </div>
+
+    <button id="botao" onclick="abrirCarta()">Abrir</button>
+
+  </div>
+</div>
+
+<script>
+function abrirCarta() {
+  document.getElementById("titulo").style.display = "none";
+  document.getElementById("botao").style.display = "none";
+  document.getElementById("mensagem").style.display = "block";
+  document.getElementById("final").style.display = "block";
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
